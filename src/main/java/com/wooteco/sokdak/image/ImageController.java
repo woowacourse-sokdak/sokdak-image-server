@@ -20,7 +20,7 @@ import org.springframework.web.multipart.MultipartFile;
 @RequestMapping("/images")
 public class ImageController {
 
-    private static final String IMAGE_DIR = "/home/ubuntu/images/";
+    public static final String IMAGE_DIR = "/home/ubuntu/images/";
 
     private final ImageService imageService;
 

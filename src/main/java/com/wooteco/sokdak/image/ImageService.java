@@ -1,5 +1,7 @@
 package com.wooteco.sokdak.image;
 
+import static com.wooteco.sokdak.image.ImageController.IMAGE_DIR;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.UUID;
@@ -8,8 +10,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 @Service
 public class ImageService {
-
-    private static final String IMAGE_DIR = "/Users/easth/Desktop/woowacourse/sokdakImage/";
 
     public ImageResponse uploadImage(MultipartFile image) throws IOException {
         final String extension = image.getContentType().split("/")[1];
